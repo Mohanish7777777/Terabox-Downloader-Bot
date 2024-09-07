@@ -35,7 +35,7 @@ async def download_video(url, reply_msg, user_mention, user_id):
     video_title = data["response"][0]["title"]
 
     try:
-        download = aria2.add_uris([fast_download_link])
+        download = aria2.add_uris([hd_download_link])
         start_time = datetime.now()
 
         while not download.is_complete:
